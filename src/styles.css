@@ -1,6 +1,8 @@
 @import '~mdbootstrap/css/mdb.css';
 @import "~hover.css/css/hover-min.css";
 @import "~animate.css/animate.css";
+@import "~swiper/swiper-bundle";
+
 
 body {
     background-color: #14161E !important;

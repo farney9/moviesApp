@@ -10,12 +10,5 @@ export class AppComponent {
   title = 'moviesApp';
 
 
-  constructor(private peliculasService: PeliculasService) {
-
-    this.peliculasService.getCartelera()
-        .subscribe( resp => {
-          console.log(resp);
-        })
-    
-  }
+  constructor() {}
 }

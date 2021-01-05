@@ -2,13 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
-  declarations: [NavbarComponent],
-  exports: [NavbarComponent],
+  declarations: [
+    NavbarComponent, 
+    SlideshowComponent
+  ],
+  exports: [
+    NavbarComponent,
+    SlideshowComponent
+  ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SwiperModule
   ]
 })
 export class ComponentsModule { }
