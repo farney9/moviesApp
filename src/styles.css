@@ -1,7 +1,7 @@
 @import '~mdbootstrap/css/mdb.css';
 @import "~hover.css/css/hover-min.css";
 @import "~animate.css/animate.css";
-@import "~swiper/swiper-bundle";
+/* @import "~swiper/swiper-bundle.css"; */
 
 
 body {
@@ -13,12 +13,13 @@ h1,h2,h3,h4,h5 {
     color: white;
 }
 
-p {
+p, small {
     color: white;
 }
 
 hr{
-    color: white;
+    color: white !important;
+    border-top: 2px solid white !important;
 }
 
 /* .navbar-brand {
