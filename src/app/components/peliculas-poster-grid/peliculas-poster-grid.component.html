@@ -1,11 +1,21 @@
 <div class="row">
-    <div class="col-md-3 my-3 animate__animated animate__fadeIn" *ngFor="let movie of movies">
+    <div class="col-md-3 my-3 animate__animated animate__fadeIn img" *ngFor="let movie of movies">
         <img
             (click)="onMovieClick(movie)"
             class="img-fluid hvr-grow rounded" 
             [src]="movie.poster_path | poster">
             <div class="mt-3">
-                <h3>{{movie.title}}</h3>
+                <div class="row">
+                    <div class="col">
+                        <h3>{{movie.title}}</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span class="badge badge-pill badge-success">{{movie.release_date | date:'yyyy'}}</span>
+                    </div>
+                </div>
+                
                 <div class="row">
                     <div class="col-10 text-white">
                         <star-rating 
@@ -23,4 +33,5 @@
             </div>
     </div>
 </div>
+
 
