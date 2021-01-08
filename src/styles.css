@@ -30,6 +30,10 @@ hr{
     display: block;
 } 
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 /* .navbar-brand {
     font-weight: 200;
     color: #bd4c5f !important;
