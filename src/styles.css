@@ -1,7 +1,7 @@
 @import '~mdbootstrap/css/mdb.css';
 @import "~hover.css/css/hover-min.css";
-@import "~animate.css/animate.css";
-/* @import "~swiper/swiper-bundle.css"; */
+@import "~animate.css/animate.min.css";
+
 
 
 body {
@@ -26,25 +26,9 @@ hr{
     box-shadow:0 0 15px rgba(67, 224, 28, 0.623) !important;
 }
 
-.card-image {
-    position: relative;
-  }
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-.card:hover .image-overlay {
-    opacity: 1;
-  }  
+.dropdown:hover>.dropdown-menu {
+    display: block;
+} 
 
 /* .navbar-brand {
     font-weight: 200;

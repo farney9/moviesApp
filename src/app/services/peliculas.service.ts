@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { CarteleraResponse, Movies } from '../interfaces/cartelera-response';
 import { Cast, Credits } from '../interfaces/credits';
+import { Genre, GenreElement } from '../interfaces/genre';
 import { MovieDetails } from '../interfaces/movie-details';
 
 @Injectable({
@@ -77,5 +78,17 @@ export class PeliculasService {
       map( resp => resp.cast),
       catchError(err => of([]))
     );
+  }
+  getGenre():Observable<GenreElement[]>{
+    // https://api.themoviedb.org/3/genre/movie/list?api_key=7dcfbc663d7e47cd64905f6ecd456b2d&language=es-ES
+
+    return this.http.get<GenreElement[]>(`${this.baseUrl}/genre/movie/list`,{
+      params: this.params
+    }).pipe(
+      map(resp => resp),
+      catchError(err => of([]))
+      
+
+    )
   }
 }

@@ -15,9 +15,27 @@
         <li class="nav-item">
             <a class="nav-link" routerLink="/home">Home</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/home">Movies</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Películas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="/home">En cartelera hoy</a>
+              <a class="dropdown-item" href="#">Próximamente</a>
+              <a class="dropdown-item" href="#">Mejor valoradas</a>
+            </div>
         </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuGenero" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Géneros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuGenero">
+              <a class="dropdown-item" routerLink="/home">Acción</a>
+              <a class="dropdown-item active" href="#">Adult</a>
+              <a class="dropdown-item" href="#">Aventura</a>
+            </div>
+        </li>
+
     </ul>
     <div class="form-inline my-2 my-lg-0">
         <input 
@@ -29,7 +47,8 @@
             aria-label="Search">
         <button 
             (click)="buscarPelicula(txtBuscar.value)"
-            class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="button">Search</button>
+            class="btn btn-outline-success my-2 my-sm-0 rounded-pill" 
+            type="button">Search</button>
     </div>
 </div>
 </nav>
