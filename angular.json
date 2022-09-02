@@ -128,7 +128,6 @@
       }
     }
   },
-  "defaultProject": "moviesApp",
   "cli": {
     "analytics": false
   }
