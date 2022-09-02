@@ -91,8 +91,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 8987);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 809);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 8987);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 721);
 /* harmony import */ var _components_components_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/components.module */ 9258);
 /* harmony import */ var _pages_pages_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/pages.module */ 9525);
@@ -110,13 +110,13 @@ class AppModule {
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
 AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
 AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule,
-        _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule,
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule,
         _pages_pages_module__WEBPACK_IMPORTED_MODULE_3__.PagesModule] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule,
-        _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule,
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _components_components_module__WEBPACK_IMPORTED_MODULE_2__.ComponentsModule,
         _pages_pages_module__WEBPACK_IMPORTED_MODULE_3__.PagesModule] }); })();
 
