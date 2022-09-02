@@ -951,9 +951,7 @@ class PeliculasService {
             return (0,rxjs__WEBPACK_IMPORTED_MODULE_1__.of)([]);
         }
         this.isLoadig = true;
-        return this.http.get(`${this.baseUrl}/movie/now_playing`, {
-            params: this.params
-        }).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.map)((resp) => resp.results), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.tap)(() => {
+        return this.http.get(`${this.baseUrl}/movie/now_playing`, { params: this.params }).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.map)((resp) => resp.results), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.tap)(() => {
             this.carteleraPage += 1;
             this.isLoadig = false;
         }));

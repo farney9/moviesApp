@@ -38,9 +38,7 @@ export class PeliculasService {
     }
     
     this.isLoadig = true;
-    return this.http.get<CarteleraResponse>(`${ this.baseUrl }/movie/now_playing`,{
-      params: this.params
-    }).pipe(
+    return this.http.get<CarteleraResponse>(`${ this.baseUrl }/movie/now_playing`,{params: this.params}).pipe(
       map( (resp) => resp.results ),
       tap(() => {
         this.carteleraPage +=1;

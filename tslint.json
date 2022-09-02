@@ -1,6 +1,6 @@
 {
   "extends": "tslint:recommended",
-  "rulesDirectory": [
+  "rulesclear": [
     "codelyzer"
   ],
   "rules": {
